@@ -1,0 +1,260 @@
+/* GENERAL */
+
+:root {
+  --nav-link-color: #34bbda;
+  --text-color: #54575c;
+  --wite-color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+  /* background-image: url(../imeges/washing-repair.jpg); */
+  /* background-position: 50%; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-text {
+  margin: 0;
+
+  color: var(--text-color);
+  font-weight: 800;
+
+  /* outline: 2px solid green; */
+}
+
+.logo-img {
+  margin: 0;
+  color: var(--text-color);
+
+  /* outline: 2px solid green; */
+}
+
+.nav-link {
+  margin: 45px 10px;
+  /* padding: 45px 10px; */
+}
+
+.nav-a {
+  padding: 45px 10px;
+  font-weight: 800;
+  color: var(--nav-link-color);
+}
+
+.nav-a:hover,
+.nav-a:focus {
+  background-color: var(--wite-color);
+  /* background-color: red; */
+  color: var(--text-color);
+}
+
+.section {
+  margin-right: auto;
+  margin-left: auto;
+  /* position: fixed; */
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+
+  /* background-color: var(--wite-color); */
+
+  /* outline: 2px solid red; */
+}
+
+.head {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  /* background-color: var(--wite-color); */
+  /* opacity: 0.5; */
+}
+
+ul.nav-box {
+  display: flex;
+  margin: 0 0 0 80px;
+  padding: 0;
+  opacity: 1;
+
+  /* outline: 2px solid green; */
+}
+
+.contacts-box {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 2px solid green; */
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.contacts-list:last-child {
+  margin-left: 20px;
+}
+/* HERO */
+
+.hero-bg {
+  display: flex;
+  align-items: center;
+  background-image: url(../imeges/washing-repair.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 340px;
+  zoom: 150%;
+
+  /* outline: 2px solid red; */
+}
+
+.button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin-top: 170px;
+  margin-bottom: 170px; */
+  border: 1px solid var(--text-color);
+  opacity: 0.85;
+  padding: 8px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  color: var(--wite-color);
+
+  background: var(--nav-link-color);
+}
+
+/* WHAT WE DO */
+
+.what-we-do {
+  position: absolute;
+  width: 100%;
+  /* top: 0%; */
+  bottom: 20%;
+  /* bottom: 50px; */
+  margin-top: 0;
+  border-bottom: 6px solid var(--nav-link-color);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 76, 106, 0.8),
+    var(--nav-link-color) 75%
+  );
+}
+
+.servise-box {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.servise-link {
+  margin-right: 13px;
+  border: 1px solid var(--wite-color);
+
+  width: 120px;
+  height: 120px;
+
+  /* outline: 2px solid green; */
+}
+
+.servise-link:last-child {
+  margin-right: 0;
+}
+
+.servise-a {
+  color: var(--wite-color);
+  text-transform: uppercase;
+}
+
+.servise-img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 11px;
+}
+
+.servise-text {
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  font-size: 77%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.title-box {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /* outline: 2px solid red; */
+}
+
+.title {
+  /* margin-top: 20px; */
+
+  font-size: 300%;
+  font-weight: 800;
+  color: var(--wite-color);
+  /* text-align: center; */
+}
+
+.title-second {
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  color: var(--wite-color);
+  /* text-align: center; */
+}
+
+/* BRANDS */
+.brands {
+  margin-top: 120px;
+}
