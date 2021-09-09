@@ -19,7 +19,11 @@ html {
 body {
   font-family: Roboto, sans-serif;
   color: var(--text-color);
-  /* background-image: url(../imeges/washing-repair.jpg); */
+  /* background-color: red; */
+  background-image: url(../imeges/washing-repair.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 150%;
   /* background-position: 50%; */
 }
 
@@ -141,15 +145,15 @@ ul.nav-box {
 /* HERO */
 
 .hero-bg {
-  display: flex;
-  align-items: center;
-  background-image: url(../imeges/washing-repair.jpg);
+  /* display: flex;
+  align-items: center; */
+  /* background-image: url(../imeges/washing-repair.jpg);
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 340px;
-  zoom: 150%;
+  zoom: 150%; */
 
   /* outline: 2px solid red; */
 }
@@ -179,7 +183,7 @@ ul.nav-box {
 /* WHAT WE DO */
 
 .what-we-do {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   /* top: 0%; */
   bottom: 20%;
