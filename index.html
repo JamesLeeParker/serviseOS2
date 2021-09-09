@@ -14,16 +14,20 @@
 <body>
     <header class="head">
        <div class="section">
-            <div class="logo">
+            <!-- <div class="logo">
                 <p class="logo-text">OLSA</p>
                 <img class="logo-img" src="./imeges/logo-colored.png" alt="logo" height="51px">
             
-            </div>
-            
+            </div> -->
+            <a class="logo" href="./index.html">
+                <p class="logo-text">OLSA</p>
+                <img src="./imeges/logo-colored.png" alt="logo" class="logo-img" width="51px">
+            </a>
+
             <nav>
                 <ul class="nav-box">
                     <li class="nav-link">
-                        <a class="nav-a" href="">Главная</a>
+                        <a class="nav-a active" href="./index.html">Главная</a>
                     </li>
             
                     <li class="nav-link">
@@ -102,33 +106,55 @@
                 </ul>            
         </section>
 
+        <!-- BRANDS -->
         <section class="brands">
-            <h2>Бренды</h2>
-                <ul class="brands-box">
-                    <li class="brand-list">a</li>
-                    <li class="brand-list">b</li>
-                    <li class="brand-list">c</li>
-                    <li class="brand-list">d</li>
-                    <li class="brand-list">e</li>
-                    <li class="brand-list">f</li>
-                </ul>
+            <h2 class="title brand-title">Бренды</h2>
+            <ul class="brand-box">
+                <li class="brand-list">
+                    <img class="brand-img" src="./imeges/Electrolux_logo.png" alt="Electrolux_logo" width="85px">
+                </li>
+
+                <li class="brand-list">
+                    <img class="brand-img" src="./imeges/philips.png" alt="philips-logo" width="85px">
+                </li>
+
+                <li class="brand-list">
+                    <img class="brand-img" src="./imeges/Samsung_Logo.png" alt="Samsung_Logo" width="85px">
+                </li>
+
+                <li class="brand-list">
+                    <img class="brand-img" src="./imeges/LG.png" alt="lg-logo" width="85px">
+                </li>
+
+                <li class="brand-list">
+                    <img class="brand-img" src="./imeges/bosch.png" alt="bosch-logo" width="85px">
+                </li>
+
+                <li class="brand-list">
+                    <img class="brand-img" src="./imeges/Zanussi-logo.png" alt="Zanussi-logo" width="85px">
+                </li>
+
+            </ul>
             
         </section>
     </main>
     
-    <footer>
-        <button class="button" type="button">Заказать звонок</button>
-
-        <div class="contacts">
+    <footer class="section">
+        <address class="contacts">
             <ul class="contacts-box">
+                <li>
+                    <a href="https://www.google.com/maps/place/%D0%9A%D0%BE%D1%80%D0%BE%D1%81%D1%82%D0%B5%D0%BD%D1%8C,+%D0%96%D0%B8%D1%82%D0%BE%D0%BC%D0%B8%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+11506/@50.9397754,28.6385786,18.25z/data=!4m5!3m4!1s0x472bdb0e59f0f0d1:0x59ae94f2d8f93b38!8m2!3d50.9532135!4d28.6457544">г.Коростень, ул. Князя Мала</a>
+                </li>
                 <li class="contacts-list">
                     <a class="contacts-a" href="tel:+38093000000">093 000 00 00</a>
                 </li>
                 <li class="contacts-list">
-                    <a class="contacts-a" href="mailto:servise@gmail.com">servise@gmail.com</a>
+                    <a class="contacts-a f-contact-a" href="mailto:servise@gmail.com">servise@gmail.com</a>
                 </li>
             </ul>
-        </div>
+        </address>
+
+        <button class="button footer-b" type="button">Заказать звонок</button>
 
     </footer>
     

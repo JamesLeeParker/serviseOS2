@@ -133,6 +133,11 @@ ul.nav-box {
 .contacts-list:last-child {
   margin-left: 20px;
 }
+
+.active {
+  color: var(--text-color);
+}
+
 /* HERO */
 
 .hero-bg {
@@ -164,6 +169,11 @@ ul.nav-box {
   color: var(--wite-color);
 
   background: var(--nav-link-color);
+}
+
+.button:hover,
+.button:active {
+  color: var(--text-color);
 }
 
 /* WHAT WE DO */
@@ -201,6 +211,12 @@ ul.nav-box {
 
 .servise-link:last-child {
   margin-right: 0;
+}
+
+.servise-link:hover,
+.servise-link:active {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
 }
 
 .servise-a {
@@ -257,4 +273,59 @@ ul.nav-box {
 /* BRANDS */
 .brands {
   margin-top: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  width: 1230px;
+  text-align: center;
+
+  outline: 2px solid red;
+}
+
+.brand-box {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  /* flex-wrap: wrap; */
+}
+
+.brand-list {
+  width: calc(100% / 3);
+}
+
+.brand-title {
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.brand-img {
+  display: inline-block;
+  margin: 0;
+}
+
+/* FOOTER */
+button.footer-b {
+  /* justify-self: end; */
+  margin: 0;
+}
+
+footer.section {
+  justify-content: space-between;
+  background-color: var(--text-color);
+}
+
+footer .contacts .contacts-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.contacts-a {
+  padding: 0;
+}
+
+address.contacts {
+  margin: 0;
 }
