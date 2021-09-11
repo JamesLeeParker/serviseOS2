@@ -106,7 +106,7 @@ h3 {
 
   /* background-color: var(--wite-color); */
 
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .head {
@@ -151,24 +151,13 @@ ul.nav-box {
 
 /* HERO */
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: auto;
   margin-left: auto;
   width: 1230px;
-  height: 400px;
-
-  outline: 2px solid red;
-}
-
-.hero-bg {
-  /* display: flex;
-  align-items: center; */
-  /* background-image: url(../imeges/washing-repair.jpg);
-  background-position: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 340px;
-  zoom: 150%; */
+  height: 350px;
 
   /* outline: 2px solid red; */
 }
@@ -177,8 +166,7 @@ ul.nav-box {
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
-  /* margin-top: 170px;
-  margin-bottom: 170px; */
+  margin-top: 60px;
 
   border: 1px solid var(--text-color);
   opacity: 0.85;
@@ -264,6 +252,7 @@ ul.nav-box {
   flex-direction: column;
   justify-content: center; */
   width: 1230px;
+  padding-top: 20px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -291,61 +280,80 @@ ul.nav-box {
 }
 
 /* BRANDS */
+
 .brands {
-  margin-top: 120px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  width: 1230px;
-  text-align: center;
-
-  outline: 2px solid red;
-}
-
-.brand-box {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  /* flex-wrap: wrap; */
-}
-
-.brand-list {
-  width: calc(100% / 3);
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .brand-title {
   margin-bottom: 30px;
   color: var(--text-color);
+  /* text-transform: uppercase; */
 }
 
-.brand-img {
-  display: inline-block;
+.brand-box {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
+  padding: 0;
+  width: 100%;
+
+  /* outline: 1px solid violet; */
 }
+
+.brand-list {
+  justify-content: space-between;
+
+  /* outline: 1px solid green; */
+}
+
+.addition {
+  margin-top: 25px;
+
+  color: var(--text-color);
+  font-weight: 800;
+  font-size: 130%;
+  opacity: 0.8;
+}
+
+/* + */
 
 /* FOOTER */
-button.footer-b {
-  /* justify-self: end; */
-  margin: 0;
-}
-
-footer.section {
-  justify-content: space-between;
+footer {
   background-color: var(--text-color);
+  border-top: 6px solid var(--nav-link-color);
 }
 
-footer .contacts .contacts-box {
-  display: flex;
+.footer-b {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 40px;
+}
+
+.f-contact-a {
+  color: var(--wite-color);
+  opacity: 0.7;
+}
+
+.contacts-f {
+  margin-bottom: 10px;
+}
+
+.contacts-f:last-child {
+  margin-bottom: 20px;
+}
+
+.contacts-f:first-child {
+  margin-top: 20px;
+}
+
+footer .contacts-box {
+  margin-left: 40px;
   flex-direction: column;
-  margin: 0;
 }
 
-.contacts-a {
-  padding: 0;
-}
-
-address.contacts {
-  margin: 0;
+.section-f {
+  justify-content: space-between;
 }
