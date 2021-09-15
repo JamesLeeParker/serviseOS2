@@ -28,7 +28,12 @@ body {
 }
 
 .hero-what {
-  background-image: url(../images/washing-repair.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/washing-repair.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
