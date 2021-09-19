@@ -19,12 +19,6 @@ html {
 body {
   font-family: Roboto, sans-serif;
   color: var(--text-color);
-  /* background-color: red; */
-  /* background-image: url(../images/washing-repair.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 150%; */
-  /* background-position: 50%; */
 }
 
 .hero-what {
@@ -214,6 +208,7 @@ ul.nav-box {
   display: inline-block;
   margin-right: 13px;
   border: 1px solid var(--wite-color);
+  fill: var(--wite-color);
 
   width: 120px;
   height: 120px;
@@ -222,49 +217,48 @@ ul.nav-box {
 }
 
 .icon-appliance {
-  margin-left: 35px;
-
-  fill: var(--wite-color);
+  fill: inherit;
   width: 50px;
   height: 70px;
-}
-
-.icon-appliance:hover {
-  fill: var(--text-color);
 }
 
 .servise-link:last-child {
   margin-right: 0;
 }
 
+.servise-a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--wite-color);
+  font-size: 77%;
+  font-weight: 400;
+
+  /* outline: 1px solid red; */
+}
+
 .servise-link:hover,
 .servise-link:active {
   border: 1px solid var(--text-color);
+
   color: var(--text-color);
+  fill: var(--text-color);
 }
 
-.servise-a {
-  color: var(--wite-color);
-  text-transform: uppercase;
+.servise-a:hover,
+.servise-a:active {
+  color: inherit;
 }
 
 .servise-img {
   margin-right: auto;
   margin-left: auto;
   margin-top: 11px;
-}
-
-.servise-text {
-  margin-top: 5px;
-  margin-bottom: 0;
-
-  font-size: 77%;
-  font-weight: 400;
-  text-align: center;
-}
-
-.servise-text:hover {
-  color: var(--text-color);
 }
 
 .title-box {
@@ -333,10 +327,18 @@ ul.nav-box {
   opacity: 0.8;
 }
 
-/* + */
-
 /* FOOTER */
 footer {
+  background-image: linear-gradient(
+      to right,
+      rgba(194, 150, 83, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  background-size: 150%;
+  background-size: cover;
   background-color: var(--text-color);
   border-top: 6px solid var(--nav-link-color);
 }
@@ -349,11 +351,11 @@ footer {
 
 .f-contact-a {
   color: var(--wite-color);
-  opacity: 0.7;
 }
 
 .contacts-f {
   margin-bottom: 10px;
+  font-style: normal;
 }
 
 .contacts-f:last-child {
